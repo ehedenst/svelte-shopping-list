@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App must snapshot 1`] = `
+<body>
+  <div>
+    <main
+      class="svelte-1e9puaw"
+    >
+      <h1
+        class="svelte-1e9puaw"
+      >
+        Hello 
+        world
+        !
+      </h1>
+       
+      <p>
+        Visit the
+    
+        <a
+          href="https://svelte.dev/tutorial"
+        >
+          Svelte tutorial
+        </a>
+        
+    to learn how to build Svelte apps.
+      </p>
+       
+      <span
+        class=" mx-1 inline-block svelte-1rjsife"
+      >
+        <button
+          class="undefined relative overflow-hidden flex items-center rounded-full px-2 py-1  border-gray-400 border-solid hover:bg-gray-50 bg-gray-300  svelte-1rjsife"
+        >
+          <i
+            aria-hidden="true"
+            class="material-icons text-gray-600 transition svelte-6e0lz1 text-base"
+          >
+            face
+          </i>
+           
+          <span
+            class="px-2 text-sm"
+          >
+            world
+          </span>
+           
+          <span
+            class="rounded-full p-1/2 inline-flex items-center cursor-pointer hover:bg-gray-400 bg-gray-500 svelte-1rjsife"
+          >
+            <i
+              aria-hidden="true"
+              class="material-icons text-white transition svelte-6e0lz1 text-xs"
+            >
+              clear
+            </i>
+          </span>
+        </button>
+      </span>
+      
+    </main>
+  </div>
+</body>
+`;
