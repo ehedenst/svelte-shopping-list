@@ -44,5 +44,7 @@
     "tailwindcss": "^1.1.4",
     "tailwindcss-elevation": "^0.3.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "pouchdb-browser": "^7.1.1"
+  }
 }
