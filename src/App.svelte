@@ -1,7 +1,4 @@
 <script>
-  import { Dialog, TextField, Button } from 'smelte';
-  import Item from './Item.svelte';
-
   let showDialog = false;
   let newItemName = '';
   let newItemMin = '1';
@@ -49,27 +46,14 @@
   }
 </style>
 
-<Dialog bind:value={showDialog}>
-  <h5 slot="title">Add Item</h5>
-  <div>
-    <TextField label="Name" type="text" bind:value={newItemName} />
-    <TextField label="Minimum " type="number" bind:value={newItemMin} />
-    <TextField label="Maximum" type="number" bind:value={newItemMax} />
-  </div>
-  <div slot="actions">
-    <Button color="secondary" text on:click={closeDialog}>Cancel</Button>
-    <Button color="primary" text on:click={addItem}>OK</Button>
-  </div>
-</Dialog>
-
 <main>
   <ul>
     {#each items as item}
-      <Item {item} on:remove={removeItem} />
+      <p>{item.name}</p>
     {/each}
   </ul>
 </main>
 
 <div class="absolute bottom-0 right-0">
-  <Button icon="add" on:click={() => (showDialog = true)} />
+  <button on:click={() => (showDialog = true)}>Add</button>
 </div>
