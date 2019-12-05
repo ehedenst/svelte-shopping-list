@@ -2,7 +2,7 @@ module.exports = function(api) {
   api.cache.forever();
   const presets = [
     [
-      '@babel/env',
+      '@babel/preset-env',
       {
         targets: {
           node: 'current'

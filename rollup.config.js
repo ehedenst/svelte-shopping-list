@@ -1,6 +1,7 @@
 import babel from 'rollup-plugin-babel';
 import serve from 'rollup-plugin-serve';
 import svelte from 'rollup-plugin-svelte';
+import postcss from 'rollup-plugin-postcss';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
@@ -25,6 +26,19 @@ export default {
       css: css => {
         css.write('public/build/bundle.css');
       }
+    }),
+
+    postcss({
+      extract: true,
+      minimize: true,
+      use: [
+        [
+          'sass',
+          {
+            includePaths: ['./theme', './node_modules']
+          }
+        ]
+      ]
     }),
 
     babel({
